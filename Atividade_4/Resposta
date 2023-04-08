@@ -1,0 +1,11 @@
+O resultado que é impresso é:
+x: 8
+x: 12
+
+A classe Protegido possui um atributo inteiro privado i, um construtor que inicializa esse atributo e dois métodos protegidos: getI e ajustar. Já a classe 
+ProtegidoSub é uma subclasse de Protegido que herda seus atributos e métodos e possui um construtor que chama o construtor da superclasse passando um parâmetro 
+e um método público mudar que chama o método ajustar da superclasse passando um parâmetro. Por fim, a classe TesteProtegido instancia um objeto da classe 
+Protegido com o valor 8, imprime o valor do atributo i através do método getI e, em seguida, instancia um objeto da classe ProtegidoSub com o valor 4, chama o 
+método mudar passando o valor 12 e imprime novamente o valor do atributo i através do método getI. O atributo i foi definido como private para proteger seu acesso 
+direto fora da classe Protegido, obrigando o uso dos métodos getI e ajustar para acessá-lo indiretamente. Já o método ajustar foi definido como protected para 
+permitir que as subclasses da classe Protegido possam acessá-lo diretamente, mas ainda assim protegendo seu acesso direto fora da hierarquia de classes.
