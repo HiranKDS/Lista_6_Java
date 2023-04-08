@@ -1,0 +1,3 @@
+Isso acontece porque a classe Notebook é uma subclasse de Computador e, portanto, ao instanciar um objeto do tipo Notebook, o construtor da superclasse Computador 
+é executado primeiro, imprimindo "Computador()". Em seguida, o construtor da classe Notebook é executado, imprimindo "Notebook()" e atribuindo um valor para o 
+atributo codigo. Finalmente, o método ligar() é chamado, que imprime o valor do atributo codigo que foi atribuído anteriormente.
